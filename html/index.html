@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>metrics-mock</title>
+</head>
+
+<body>
+  <main>
+    <h1>
+      metrics-mock
+    </h1>
+    <a href="/metrics">metrics</a>
+    <section>
+      <h2>Status Codes</h2>
+      <ul>
+        <li><a href="/status/200">GET Status Code 200</a></li>
+        <li><a href="/status/404">GET Status Code 404</a></li>
+        <li><a href="/status/500">GET Status Code 500</a></li>
+        <li>
+          <form action="/status/200" method="POST">
+            <a href="#" onclick="this.parentNode.submit()">POST Status Code 200</a>
+          </form>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Latency</h2>
+      <ul>
+        <li><a href="/latency/1">GET 1ms</a></li>
+        <li><a href="/latency/10">GET 10ms</a></li>
+        <li><a href="/latency/500">GET 500ms</a></li>
+        <li>
+          <form action="/latency/500" method="POST">
+            <a href="#" onclick="this.parentNode.submit()">POST 500ms</a>
+          </form>
+        </li>
+      </ul>
+    </section>    
+  </main>
+</body>
+
+</html>
