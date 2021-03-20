@@ -3,6 +3,7 @@ on:
   release:
     types:
       - created
+      - edited
 jobs:
   generate:
     name: Generate cross-platform builds
