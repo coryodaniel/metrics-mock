@@ -14,7 +14,7 @@ import (
 )
 
 var (
-	dflBuckets = []float64{1, 10, 100, 1000}
+	dflBuckets = []float64{100, 300, 1000, 3000}
 )
 
 const (
