@@ -15,7 +15,7 @@ jobs:
         uses: thatisuday/go-cross-build@v1
         with:
           platforms: "linux/amd64, darwin/amd64"
-          name: "metrics-mock"
+          name: "metricsbin"
           compress: "false"
           dest: "dist"
       - name: Upload build-artifacts

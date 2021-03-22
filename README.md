@@ -1,24 +1,22 @@
-# metrics-mock
+# metricsbin
 
 A simple prometheus metrics mock service.
 
-This service exposes a `/metrics` endpoint and has two additional endpoints for generating prometheus metrics.
-
-## Usage
-
-Start the server:
-
-```shell
-metrics-mock -listen-address=:8080
-```
-
-The server has two primary endpoints:
+This service exposes a `/metrics` endpoint and has two additional endpoints for generating prometheus metrics:
 
 * /status/{statusCode} for incrementing a request counter partitioned by: route pattern, method, and code
 * /latency/{sleepMs} for creating histogram metrics partitioned by: route pattern, method, and code
 
 _Note:_ The `latency` endpoint does not actually sleep, it just fakes the observation in the prometheus middleware.
 
+
+## Usage
+
+Start the server:
+
+```shell
+metricsbin -listen-address=:8080
+```
 
 ### Generating metrics
 

@@ -1,4 +1,4 @@
-module github.com/coryodaniel/metrics-mock
+module github.com/coryodaniel/metricsbin
 
 go 1.16
 

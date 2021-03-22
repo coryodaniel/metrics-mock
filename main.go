@@ -52,7 +52,7 @@ func main() {
 	router.Path("/status/{statusCode}").HandlerFunc(StatusHandler)
 	router.Path("/latency/{sleepMs}").HandlerFunc(LatencyHandler)
 
-	fmt.Println(fmt.Sprintf("metrics-mock %s listening on %s ...", version, *addr))
+	fmt.Println(fmt.Sprintf("metricsbin %s listening on %s ...", version, *addr))
 	http.ListenAndServe(*addr, router)
 }
 
